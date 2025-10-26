@@ -1,14 +1,14 @@
 # Trabajo Individual 1: Analizando bases de datos del Eras Tour de Taylor Swift
 ###  Este proyecto analiza una base de datos del Tour mundial realizado por la artista Taylor Swift para realizar distintas funciones en R y Rmarkdown conectarlo con Github.
 
-# Cargamos las librerías a utilizar
+#### Cargamos las librerías a utilizar
 
-library(tidyverse)
-library(janitor)
-library(stringr)
-library(dplyr)
+  library(tidyverse)
+  library(janitor)
+  library(stringr)
+  library(dplyr)
 
-# Cargamos la base de datos, usamos csv2 para que lea bien el archivo CSV ya que está separado por ";" y de esta forma se ordena directamente en columnas.
+Cargamos la base de datos, usamos csv2 para que lea bien el archivo CSV ya que está separado por ";" y de esta forma se ordena directamente en columnas.
 Taylor_dataset <- read_csv2("~/Desktop/Datos/Individual 1/Individual1/TaylorDataset.csv")
 
 # Limpiamos base de datos
@@ -57,7 +57,7 @@ Taylor2 |>
 ## Guardar nueva base como archivo
 write_csv(Taylor2, "~/Desktop/Datos/Individual 1/Individual1/Taylor2.csv")
 
-#Vamos a visualizar los datos
+# Vamos a visualizar los datos
 
 ## Telonera/o principal por ciudad en un gráfico de barras.
 Taylor2 |>
